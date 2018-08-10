@@ -1,9 +1,23 @@
-.collection-images{
-    ul{
-        list-style-type: none;
-        .image{
-            width: 100%;
-            height: auto;
+.collection-container{
+    .collection-names{
+        margin-left: -35px;
+        ul{
+            display: flex;
+            font-size: 16px;
+            justify-content: space-evenly;
+            list-style-type: none;
         }
     }
+    .collection-images{
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            .image{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
 }
