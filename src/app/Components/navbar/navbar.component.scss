@@ -1,0 +1,212 @@
+$marginTop: 10px;
+$marginRight: 20px;
+$flexGrow: 1;
+$grayishBlue: #2E476C;
+$backgroundColor: #FFFFFF;
+$textColor: #A5B0C0;
+
+@mixin navBar {
+    display: flex;
+    background-color: $backgroundColor;
+    color: lighten( $grayishBlue, 15%);
+    font-family: 'Headland One', serif;
+    font-size: 12px;
+    width: 100%;
+    height: 70px;
+}
+@mixin mobileDropDownContentStyles {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    margin: 21px 0 0 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    
+    p{
+        padding: 7% 0 7% 0;
+        box-shadow: 0 2px 0px #F8F8F8;
+        margin: 0;
+    }
+}
+@mixin ulStyles{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5% 0 0 8%;
+    padding: 0;
+    font-size: 16px;
+}
+@mixin liStyles{
+    display: inline-block;
+    margin-right: $marginRight;
+    cursor: pointer;
+}
+@mixin dropdownStyles{
+    display: inline-block;
+    position: relative;
+}
+@mixin dropdownContentStyles{
+    display: none;
+    position: absolute;
+    background-color: $backgroundColor;
+    margin-left: -15px;
+    box-shadow: 0px 8px 16px 0px $backgroundColor;
+    z-index: 2;
+}
+@mixin placeHolder{
+    ::placeholder{
+        color: $textColor;
+    }
+    :-ms-input-placeholder{
+        color: $textColor;
+    }
+    ::-ms-input-placeholder{
+        color: $textColor;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        @include navBar();
+        box-shadow: 0 10px 5px #F8F8F8;
+        .menu-and-search-container{
+            font-size: 22px;
+            flex-grow: $flexGrow;
+            margin: 22px 0 0 0;
+            width: 100%;
+            .menu-icon{
+                margin: 0 0 0 30px;
+                @include dropdownStyles();
+                cursor: pointer;
+            }
+            .menu-content{
+                @include mobileDropDownContentStyles();
+
+                .social-icons{
+                    ul{
+                        @include ulStyles();
+                        li{
+                            @include liStyles();
+                        }
+                    }
+                }
+            }
+            .search-icon{
+                margin: 22px 0 0 15px;
+                cursor: pointer;
+            }
+        }
+        .brand-container{
+            font-size: 10px;
+            flex-grow: $flexGrow + 1;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 1px;
+            cursor: pointer;
+            :first-child{
+                font-size: 16px;
+                margin-top: 40px;
+            }
+        }
+        .shopping-container{
+            font-size: 18px;
+            flex-grow: $flexGrow;
+            margin: 22px 0 0 0;
+            width: 100%;
+            .shopping-bag{
+                margin: 0 0 0 70px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// .nav-bar{
+//     .pages{
+//         margin-right: $marginRight * 5.55;
+//         flex-grow: $flexGrow;
+//         margin-left: 90px;
+//     }
+//     .pages, .social-icons{
+//         ul{
+//             @include ulStyles();
+//             li{
+//                 @include liStyles();
+//                 span{
+//                     a{
+//                         text-decoration: none;
+//                         color: $textColor;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     .social-icons{
+//         margin-right: $marginRight * 5.55;
+//         flex-grow: $flexGrow;
+//     }
+// }
+// .dropdown-language{
+//     @include dropdownStyles();
+//     fa-icon{
+//         margin-left: 5px;
+//     }
+//     .language-content{
+//         @include dropdownContentStyles();
+//         min-width: 10px;
+//         width: 25px;
+//         padding: 13px 15px;
+//     }
+// }
+// .dropdown-language:hover {
+//     .language-content{
+//         display: block;
+//     }  
+// }
+// .dropdown-help{
+//     @include dropdownStyles();
+//     fa-icon{
+//         margin-left: 5px;
+//     }
+//     .help-content{
+//         min-width: 100px;
+//         width: 140px;
+//         height: 145px;
+//         margin: 0;
+//         margin-top: $marginTop - 5;
+//         padding: 5px 5px 5px 20px;
+//         @include dropdownContentStyles();
+//         margin-left: -20px;
+//         li{
+//             margin-top: $marginTop + 5;
+//         }
+//     }
+// }
+// .dropdown-help:hover{
+//     .help-content{
+//         display: block;
+//     }
+// }
+// .offer{
+//     margin-top: $marginTop;
+//     text-align: center;
+//     flex-grow: $flexGrow + 18;
+// }
+// .search-icon{
+//     border-right: 1px solid $textColor;
+//     fa-icon{
+//         margin-right: $marginRight;
+//     }
+//     input{
+//         background-color: $backgroundColor;
+//         border: 1px solid $backgroundColor;
+//         width: 115px;
+//         height: 35px;
+//         margin: 0;
+//     }
+//     @include placeHolder();
+// }
