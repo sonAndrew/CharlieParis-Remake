@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeroImgComponent } from './Components/hero-img/hero-img.component';
 import { CollectionHeadComponent } from './Components/collection-head/collection-head.component';
 import { CollectionSliderComponent } from './Components/collection-slider/collection-slider.component';
@@ -17,8 +16,7 @@ import { CollectionSliderComponent } from './Components/collection-slider/collec
     CollectionSliderComponent
   ],
   imports: [
-    BrowserModule,
-    FontAwesomeModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

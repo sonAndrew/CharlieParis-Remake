@@ -9,7 +9,9 @@
         }
     }
     .collection-images{
+        overflow: hidden;
         ul{
+            display: flex;
             list-style-type: none;
             margin: 0;
             padding: 0;
