@@ -23,11 +23,14 @@
     "@fortawesome/angular-fontawesome": "^0.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^2.2.2",
+    "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
     "add": "^2.0.6",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
     "yarn": "^1.9.4",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "bootstrap": "^4.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",

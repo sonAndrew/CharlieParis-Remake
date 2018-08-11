@@ -8,9 +8,20 @@
   </div>
   <div class="collection-images">
     <ul>
-      <li><img class="image" src={{images[0]}} alt="Designed pocket watch"></li>
+      <!-- <li><img class="image" src={{images[0]}} alt="Designed pocket watch"></li>
       <li><img class="image" src={{images[1]}} alt=""></li>
-      <li><img class="image" src={{images[2]}} alt=""></li>
+      <li><img class="image" src={{images[2]}} alt=""></li> -->
+      <ngb-carousel *ngIf="images">
+          <ng-template ngbSlide>
+            <img class="image" [src]="images[0]" alt="Random first slide">
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="image" [src]="images[1]" alt="Random second slide">
+          </ng-template>
+          <ng-template ngbSlide>
+            <img class="image" [src]="images[2]" alt="Random third slide">
+          </ng-template>
+        </ngb-carousel>
     </ul>
   </div>
 </div>
