@@ -1,8 +1,11 @@
+$grayishBlue: #2E476C;
+
 .collection-container{
     .collection-names{
         margin-left: -35px;
         ul{
             display: flex;
+            color: lighten( $grayishBlue, 5%);
             font-size: 16px;
             justify-content: space-evenly;
             list-style-type: none;
@@ -17,7 +20,12 @@
             padding: 0;
             .image{
                 width: 100%;
-                height: auto;
+                height: 450px;
+                padding: 18px;
+            }
+            p{
+                text-align: center;
+                color: lighten( $grayishBlue, 5%);
             }
         }
     }
