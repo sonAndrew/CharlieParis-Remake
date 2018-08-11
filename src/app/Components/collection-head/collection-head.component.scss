@@ -2,9 +2,11 @@ $grayishBlue: #2E476C;
 .head{
     text-align: center;
     font-family: 'Headland One', serif;
+    margin: 20px 0 40px 0;
     .title{
         color: lighten( $grayishBlue, 5%);
         word-spacing: -5px;
+        margin-bottom: 25px;
     }
     button{
         width: 130px;

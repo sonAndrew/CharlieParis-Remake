@@ -11,15 +11,17 @@ $textColor: #A5B0C0;
     color: lighten( $grayishBlue, 15%);
     font-family: 'Headland One', serif;
     font-size: 12px;
-    width: 100%;
+    // width: 100%;
+    padding: 0;
     height: 70px;
+    box-shadow: 0 5px 0px #F8F8F8;
 }
 @mixin mobileDropDownContentStyles {
     display: none;
     position: absolute;
     background-color: #FFFFFF;
     font-size: 12px;
-    margin: 21px 0 0 0;
+    margin: 21px 0 0 -24px;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -42,6 +44,7 @@ $textColor: #A5B0C0;
 @mixin liStyles{
     display: inline-block;
     margin-right: $marginRight;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 @mixin dropdownStyles{
@@ -68,59 +71,59 @@ $textColor: #A5B0C0;
     }
 }
 
-@media only screen and (max-width: 600px){
-    .navbar{
-        @include navBar();
-        box-shadow: 0 10px 5px #F8F8F8;
-        .menu-and-search-container{
-            font-size: 22px;
-            flex-grow: $flexGrow;
-            margin: 22px 0 0 0;
-            width: 100%;
-            .menu-icon{
-                margin: 0 0 0 30px;
-                @include dropdownStyles();
-                cursor: pointer;
-            }
-            .menu-content{
-                @include mobileDropDownContentStyles();
+.navbar{
+    @include navBar();
+    .menu-and-search-container{
+        font-size: 150%;
+        flex-grow: $flexGrow;
+        margin: 0 0 0 24px;
+        // width: 100%;
+        .menu-icon{
+            // margin: 0 0 0 30px;
+            @include dropdownStyles();
+            cursor: pointer;
+        }
+        .menu-content{
+            @include mobileDropDownContentStyles();
 
-                .social-icons{
-                    ul{
-                        @include ulStyles();
-                        li{
-                            @include liStyles();
-                        }
+            .social-icons{
+                ul{
+                    @include ulStyles();
+                    li{
+                        @include liStyles();
                     }
                 }
             }
-            .search-icon{
-                margin: 22px 0 0 15px;
-                cursor: pointer;
-            }
         }
-        .brand-container{
-            font-size: 10px;
-            flex-grow: $flexGrow + 1;
-            margin: 0;
-            width: 100%;
-            text-align: center;
-            line-height: 1px;
+        .search-icon{
+            margin: 0 0 0 10px;
             cursor: pointer;
-            :first-child{
-                font-size: 16px;
-                margin-top: 40px;
-            }
         }
-        .shopping-container{
-            font-size: 18px;
-            flex-grow: $flexGrow;
-            margin: 24px 0 0 0;
-            width: 100%;
-            .shopping-bag{
-                margin: 0 0 0 50%;
-                cursor: pointer;
-            }
+    }
+    .brand-container{
+        font-size: 10px;
+        flex-grow: $flexGrow + 1;
+        margin: 0 30px 0 0;
+        // width: 100%;
+        text-align: center;
+        line-height: 1px;
+        cursor: pointer;
+        :first-child{
+            font-size: 16px;
+            margin-top: 40px;
+        }
+    }
+    .shopping-container{
+        font-size: 150%;
+        flex-grow: $flexGrow;
+        margin: 0 -20px 0 20px;
+        // width: 100%;
+        .shopping-bag{
+            // margin: 0 0 0 50%;
+            cursor: pointer;
+        }
+        .items-number{
+            margin-left: 5px;
         }
     }
 }
