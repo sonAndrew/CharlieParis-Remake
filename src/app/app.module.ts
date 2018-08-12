@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
@@ -20,7 +21,8 @@ import { OurstoryComponent } from './Components/ourstory/ourstory.component';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
