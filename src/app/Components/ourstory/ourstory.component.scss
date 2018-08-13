@@ -1,11 +1,22 @@
-// .image-container{
-//     width: 100%;
-//     height: 550px;
-//     padding: 18px;
-    
-// }
-.image{
+.discovery-container{
     width: 100%;
-    height: 250px;
+    height: 550px;
     padding: 18px;
+    text-align: center;
+    .image{
+        width: 100%;
+        height: 250px;
+    }
+    p{
+        margin: -44px -20px;
+        padding: 65px 45px;
+        background-color: aliceblue;
+        
+    }
+    span{
+        a{
+            text-decoration: underline;
+        }
+        
+    }
 }
