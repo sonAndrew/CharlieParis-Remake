@@ -9,6 +9,7 @@ import { HeroImgComponent } from './Components/hero-img/hero-img.component';
 import { CollectionHeadComponent } from './Components/collection-head/collection-head.component';
 import { CollectionSliderComponent } from './Components/collection-slider/collection-slider.component';
 import { OurstoryComponent } from './Components/ourstory/ourstory.component';
+import { EndContentComponent } from './Components/end-content/end-content.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OurstoryComponent } from './Components/ourstory/ourstory.component';
     HeroImgComponent,
     CollectionHeadComponent,
     CollectionSliderComponent,
-    OurstoryComponent
+    OurstoryComponent,
+    EndContentComponent
   ],
   imports: [
     BrowserModule,
