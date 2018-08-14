@@ -1,4 +1,7 @@
+$grayishBlue: #2E476C;
 .discovery-container{
+    font-family: 'Headland One', serif;
+    color: lighten( $grayishBlue, 15%);
     width: 100%;
     height: 550px;
     padding: 18px;
@@ -8,8 +11,8 @@
         height: 250px;
     }
     p{
-        margin: -44px -20px;
-        padding: 65px 45px;
+        margin: -30px -20px;
+        padding: 63px 18px;
         background-color: aliceblue;
         
     }

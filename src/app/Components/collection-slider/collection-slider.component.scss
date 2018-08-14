@@ -1,6 +1,8 @@
 $grayishBlue: #2E476C;
 
 .collection-container{
+    font-family: 'Headland One', serif;
+    color: lighten( $grayishBlue, 15%);
     .collection-names{
         margin-left: -35px;
         ul{
