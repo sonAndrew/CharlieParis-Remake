@@ -9,9 +9,11 @@ export class CollectionSliderComponent implements OnInit {
 
   collection:any = ['NOVELTIES', 'MEN', 'WOMAN'];
   images:any = [
-    '../../../assets/Images/art-blur-brass.jpg',
-    '../../../assets/Images/analogue-color-executive.jpg',
-    '../../../assets/Images/analogue-antique-business.jpg'
+    '../../../assets/Images/Slider-Images/bastille-b46.jpg',
+    '../../../assets/Images/Slider-Images/bastille.jpg',
+    '../../../assets/Images/Slider-Images/horizon.jpg',
+    '../../../assets/Images/Slider-Images/gr-bleu.jpg',
+    '../../../assets/Images/Slider-Images/bastille-b46 (1).jpg'
   ]
 
   constructor() {}
