@@ -2,13 +2,13 @@ $marginTop: 10px;
 $marginRight: 20px;
 $flexGrow: 1;
 $grayishBlue: #2E476C;
-$backgroundColor: #FFFFFF;
+$backgroundColor: #1B3A5F;
 $textColor: #A5B0C0;
 
 @mixin navBar {
     display: flex;
     background-color: $backgroundColor;
-    color: lighten( $grayishBlue, 15%);
+    color: #FFFFFF;
     font-family: 'Libre Baskerville', serif;
     font-size: 12px;
     // width: 100%;
